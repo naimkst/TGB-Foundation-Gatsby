@@ -72,7 +72,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     "gatsby-plugin-page-transitions",
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
