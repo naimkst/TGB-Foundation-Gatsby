@@ -6,7 +6,7 @@
  *
  */
 
- module.exports = {
+module.exports = {
   siteMetadata: {
     title: `The TGB Foundation | Together Giving Back`,
     description: `An impact-driven nonprofit providing opportunity for kids to live their best lives.`,
@@ -37,14 +37,14 @@
           `https://tgbfoundation.wpengine.com/graphql`,
         schema: {
           timeout: 3600000,
-          requestConcurrency: 1,
+          requestConcurrency: 100,
         },
         develop: {
           hardCacheMediaFiles: true,
         },
         html: {
           generateWebpImages: true,
-        }
+        },
       },
     },
 
@@ -71,14 +71,14 @@
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-page-transitions',
+    "gatsby-plugin-page-transitions",
     `gatsby-plugin-netlify`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-          threshold: 0.05, // Percentage of an element's area that needs to be visible to launch animation
-      }
+        threshold: 0.05, // Percentage of an element's area that needs to be visible to launch animation
+      },
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
